@@ -1,5 +1,17 @@
 # MagnetarProject
 
+## Description:
+This python script scrapes the top 50 articles from freethink.com and converts them into txt files. They are stored in a directory called articles, placed in the same directory as the python file.
+
+## How to run:
+Ensure you have python installed on your machine
+Run command: python3 save_articles.py
+If certifi must be installed, run command: pip install certifi
+    Note: pip may be required to be replaced with pip3, ensure you are in the same directory as python file
+
+You should find your articles in a directory after the script has finished. 
+Please note it may take some time as delays were added to ensure we are a polite scraper.
+
 ## How it all went down:
 
 ### First Push - Scraping Article Links
