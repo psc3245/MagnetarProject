@@ -22,10 +22,23 @@
 2. Analyzed the HTML class names in articles to identify several patterns:
     1. All normal text was kept in a p tag
     2. All headings, block quotes, and images followed a consistent pattern in either tag or class attribute
-    3. Embedded tweets stick out pretty well so those should be easy to handle
-    4. Right now going with a txt file - all of those should convert easily
+    3. Right now going with a txt file - all of those should convert easily
 3. Make a similar class to the first parser, this one specific to the article constraints
 4. Got it working with title, author, and publication for each article as well as the text from paragraphs
 5. Expanded parsing functionality
 6. Implemented article saving - makes a directory called "articles" and places articles there
 7. Saves articles in json format
+
+### Third push - Perfecting the Tool and Enhancing Readability
+1. Convert to .txt file
+    1. Append .txt to the end of the filename
+    2. Write the title, author, and publishing date
+    3. Write each line in contents
+    4. Close the file
+2. Add comments to document behavior
+3. Clean up the article files
+    1. Clean up the header of each file
+    2. Clean up file names
+    3. Clean up content array that stores the text of files
+    4. Clean up how quotes and images appear in content array
+    5. Clean up header formatting
