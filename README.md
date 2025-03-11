@@ -17,3 +17,15 @@
 12. Expanded parser class to have a member variable to keep track of links
 13. Tested code and successfully gathered links from the website. Limited size to 50. Tested code again and ensured I had successfully collected the top 50 links off freethink.
 
+### Second Push - Scraping Articles from Gathered Links
+1. Look through article HTML to find a method to parse it
+2. Analyzed the HTML class names in articles to identify several patterns:
+    1. All normal text was kept in a p tag
+    2. All headings, block quotes, and images followed a consistent pattern in either tag or class attribute
+    3. Embedded tweets stick out pretty well so those should be easy to handle
+    4. Right now going with a txt file - all of those should convert easily
+3. Make a similar class to the first parser, this one specific to the article constraints
+4. Got it working with title, author, and publication for each article as well as the text from paragraphs
+5. Expanded parsing functionality
+6. Implemented article saving - makes a directory called "articles" and places articles there
+7. Saves articles in json format
